@@ -19,7 +19,9 @@
         }
         .content {
             max-width: 600px;
-            text-align: center;
+            padding: 5%;
+            box-sizing: border-box;
+            text-align: left;
         }
         img {
             max-width: 200px; /* Size the logo */
@@ -33,6 +35,14 @@
         }
         p {
             margin: 15px 0;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .content {
+                max-width: 90%; /* Reduce the width for mobile */
+                padding: 3%; /* Less padding on sides */
+            }
         }
     </style>
 </head>
